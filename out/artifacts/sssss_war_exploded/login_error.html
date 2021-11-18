@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://yjszs.lzu.edu.cn/lzuyjsytjxt/login/session.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="author" content="NTT DATA INTRAMART CORPORATION">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<!--<base href="http://202.201.15.253:8080/imart/" target="_self">-->
+		<!--<base href="." target="_self">--><base href="." target="_self">
+
+		<script type="text/javascript" src="./login_error/jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" href="./login_error/iconfont.css">
+		<style>
+			.ims-http-error {
+				width: 80%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				right: 0;
+				bottom: 0;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+			}			
+			.ims-error-tips {text-align: center;}			
+			.ims-error-tips .ims-img-tips i {font-size: 96px;color: #fe7271;}			
+			.ims-error-tips .ims-img-tipstr {margin-bottom: 39px;}	
+			.ims-btn-main {background-color: #4294F7; border: 1px solid #4294F7;}	
+			.ims-btn{color：white;}
+		</style>
+		<title>登录错误页面</title>		
+		<script>
+		function toLogin() {
+			window.location.href="login.jsp";
+		};
+        </script>
+	</head>
+	<body>
+		<div class="ims-http-error">
+			<div class="ims-error-tips">
+
+				<div class="ims-img-tips ims-img-tipstr ims-error-false">
+					<i class="icon iconfont icon-error"></i>
+				</div>
+				<div class="img-error-str">
+				   <h1 class="ims-tip-h1">账号或者密码错误！</h1>
+                   <p>系统检测到您账号或者密码错误，请返回登录页面，重新登录！</p>
+                  <button onclick="toLogin();" class="ims-btn ims-btn-main ims-btn-lg" style="margin-top:20px;padding:8px 20px;color:#fff;font-size:16px;cursor: pointer;">
+                  	<i class="iconfont icon-back"></i>&nbsp;返回登录页面
+                  </button>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" id="im_error_url" name="location" value="ui/message/error">
+		<input type="hidden" id="im_error_key" name="key" value="8f1vhuwjguuc0ul">
+	
+
+</body></html>
