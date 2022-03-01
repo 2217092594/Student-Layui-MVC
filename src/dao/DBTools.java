@@ -15,9 +15,9 @@ public class DBTools {
     static Connection connection = null;
     static PreparedStatement preparedStatement = null;
     static ResultSet resultSet = null;
-    private final static String DB_URL = "jdbc:mysql://123.57.78.219:3306/ts?useSSL=false";
-    private final static String DB_USER = "zxl";
-    private final static String DB_PASSWORD = "221709zxl";
+    private final static String DB_URL = "jdbc:mysql://你的地址:3306/ts?useSSL=false";
+    private final static String DB_USER = "你的账户";
+    private final static String DB_PASSWORD = "你的密码";
 
     public static Connection getConnection() {
         try {
